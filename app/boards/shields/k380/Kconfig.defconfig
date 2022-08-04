@@ -1,6 +1,6 @@
 if SHIELD_K380
 
 config ZMK_KEYBOARD_NAME
-	default "K380"
+  default "K380+"
 
 endif
