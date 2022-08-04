@@ -1,0 +1,7 @@
+file_format: "1"
+id: k380
+name: Logitech K380 Mod
+type: shield
+requires: [sparkfun_micromod_nrf52840]
+features:
+  - keys
