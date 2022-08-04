@@ -1,0 +1,9 @@
+file_format: 1
+id: micromod_nrf52840
+name: SparkFun Micromod nRF52840
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+expose: [sparkfun_micromod_nrf52840]
