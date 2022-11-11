@@ -4,6 +4,15 @@
   chosen {
     zmk,kscan = &kscan0;
     zmk,matrix_transform = &default_transform;
+    zmk,battery = &vbatt;
+  };
+
+  vbatt: vbatt {
+    compatible = "zmk,battery-voltage-divider";
+    label = "VBATT";
+    io-channels = <&adc 6>;
+    output-ohms = <100000>;
+    full-ohms = <(100000 + 100000)>;
   };
 
   kscan0: kscan {
@@ -54,4 +63,8 @@ RC(7,10) RC(4,13) RC(7,9) RC(1,8) RC(5,7) RC(3,6) RC(3,3) RC(0,6) RC(2,7) RC(0,4
 RC(3,14) RC(0,13) RC(1,12) RC(5,11)             RC(5,1)           RC(4,11) RC(2,0) RC(3,7) RC(2,8) RC(6,6) RC(4,1)
       >;
   };
+};
+
+&adc {
+  status = "okay";
 };
