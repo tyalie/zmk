@@ -396,6 +396,7 @@ static int release_binding(struct active_hold_tap *hold_tap) {
     } else {
         binding.behavior_dev = hold_tap->config->tap_behavior_dev;
         binding.param1 = hold_tap->param_tap;
+        k_sleep(K_MSEC(20));
     }
     return behavior_keymap_binding_released(&binding, event);
 }
