@@ -12,14 +12,14 @@
 
     diode-direction = "row2col";  // this is wrong, there's no diode
     row-gpios
-      = <&gpio0 31 GPIO_ACTIVE_HIGH>
-      , <&gpio0  2 GPIO_ACTIVE_HIGH>
-      , <&gpio0 10 GPIO_ACTIVE_HIGH>
-      , <&gpio0  9 GPIO_ACTIVE_HIGH>
-      , <&gpio1 14 GPIO_ACTIVE_HIGH>
-      , <&gpio1  4 GPIO_ACTIVE_HIGH>
-      , <&gpio1  6 GPIO_ACTIVE_HIGH>
-      , <&gpio0 17 GPIO_ACTIVE_HIGH>
+      = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio0  2 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio1  4 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
+      , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_OPEN_SOURCE)>
       ;
     col-gpios
       = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
