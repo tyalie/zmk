@@ -1,0 +1,9 @@
+file_format: "1"
+id: tyk380_v2
+name: TyK380v2
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - ble

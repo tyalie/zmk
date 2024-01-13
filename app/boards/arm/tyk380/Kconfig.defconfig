@@ -1,0 +1,15 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_TYK380_V2
+
+config BOARD
+    default "tyk380"
+
+config ZMK_KEYBOARD_NAME
+    default "TyK380v2"
+
+config BT_CTLR
+    default BT
+
+endif # BOARD_TYK380_V2

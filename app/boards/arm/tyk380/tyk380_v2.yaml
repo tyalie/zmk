@@ -1,0 +1,20 @@
+identifier: tyk380_v2
+name: TyK380v2 Keyboard
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 32
+supported:
+  - ble
+  - adc
+  - ieee802154
+  - gpio
+  - i2c
+  - counter
+  - spi
+  - kscan
+  - watchdog
+  - pwm

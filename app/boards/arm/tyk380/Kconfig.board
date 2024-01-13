@@ -1,0 +1,8 @@
+# TyK380v2 board configuration
+#
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config BOARD_TYK380_V2
+    bool "TyK380v2 Keyboard based on Logitech K380s"
+    depends on SOC_NRF52832_QFAB
