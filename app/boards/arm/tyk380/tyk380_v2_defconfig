@@ -19,6 +19,17 @@ CONFIG_PINCTRL=y
 CONFIG_GPIO_AS_PINRESET=n
 CONFIG_NFCT_PINS_AS_GPIOS=y
 
+# enable settings
+CONFIG_FLASH=y
+CONFIG_FLASH_PAGE_LAYOUT=y
+CONFIG_FLASH_MAP=y
+CONFIG_NVS=y
+CONFIG_SETTINGS=y
+CONFIG_SETTINGS_NVS=y
+
+# we need this to make sure that we don't overflow the
+# usable flash area, as our available space is severely limited
+CONFIG_USE_DT_CODE_PARTITION=y
 
 # ZMK
 ## we don't have battery reporting (yet or maybe never)
