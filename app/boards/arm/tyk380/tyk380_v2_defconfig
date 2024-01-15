@@ -15,15 +15,18 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=n
 CONFIG_GPIO=y
 CONFIG_PINCTRL=y
 
-# we use that for the keyboard
+## we use these pins for the keyboard
 CONFIG_GPIO_AS_PINRESET=n
 CONFIG_NFCT_PINS_AS_GPIOS=y
 
 CONFIG_TEMP_NRF5=n
+
+# ZMK
+## we don't have battery reporting (yet or maybe never)
 CONFIG_ZMK_BATTERY_REPORTING=n
 CONFIG_ZMK_EXT_POWER=n
 
-CONFIG_BT_MAX_CONN=1
-
+## we only have ble
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
+CONFIG_BT_MAX_CONN=1
